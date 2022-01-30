@@ -48,3 +48,13 @@
     
   }
 }
+
+@media (max-width: 720px) {
+  .headerContent {
+    nav {
+      position: absolute;
+      margin-left: 0rem;
+      margin-top: 6rem;
+    }
+  }
+}
