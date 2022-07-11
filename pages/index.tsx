@@ -22,10 +22,10 @@ export default function Home() {
         </div>
         <div className='mt-20 text-m text-[#607B96] leading-loose'>
           <span className='flex'>
-            // Coding to improve the world.
+            .// Coding to improve the world.
           </span>
           <span className='flex'>
-           // you can see my projects in Guithub
+           .// you can see my projects in Guithub
           </span>
         </div>
         <div className='leading-loose'>
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div className='mt-6 text-m text-[#607B96] leading-loose'>
           <span className='flex'>
-            // and we also can connect in LinkedIn
+            .// and we also can connect in LinkedIn
           </span>
         </div>
         <div className='leading-loose'>

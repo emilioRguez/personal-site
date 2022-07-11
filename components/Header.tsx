@@ -10,7 +10,6 @@ export function Header() {
           <a href="" className="mr-8">_about_me</a>
         </nav>
       </div>
-      {/* <hr className="my-6 border-gray-400 lg:my-8" /> */}
     </header>
     
   )
