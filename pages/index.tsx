@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { HandWaving, GithubLogo, CaretRight } from 'phosphor-react'
+import { HandWaving, TwitterLogo, CaretRight, FacebookLogo, InstagramLogo } from 'phosphor-react'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='p-44'>
+      <main className='px-48 py-40'>
         <div className='text-xl'>
           <HandWaving size={25} color={'#43D9AD'} className='inline-block' /> Hi all. I am
           <span className='text-6xl mt-6 flex'>
@@ -41,12 +41,25 @@ export default function Home() {
           <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>linkedinLink</span> = 
           <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
         </div>
-
       </main>
 
-      {/* <footer className=''>
-          Made with 💙 by Emilio Rodriguez.
-      </footer> */}
+      <footer className='flex gap-2 px-4'>
+        <div>
+          <span className="text-m text-[#607B96]">
+            Find me in:
+          </span>
+        </div>
+        <div>
+          <a href="https://twitter.com/emilioRdguez">
+            <TwitterLogo size={25} color={'#4D5BCE'} className='inline-block' />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/emiliorguezh/">
+            <InstagramLogo size={25} color={'#E99287'} className='inline-block' />
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }
