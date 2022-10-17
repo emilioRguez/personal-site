@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { HandWaving, TwitterLogo, CaretRight, FacebookLogo, InstagramLogo } from 'phosphor-react'
 
 export default function Home() {
@@ -10,40 +11,44 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='px-48 py-40'>
-        <div className='text-xl'>
-          <HandWaving size={25} color={'#43D9AD'} className='inline-block' /> Hi all. I am
-          <span className='text-6xl mt-6 flex'>
-            Emilio Rodriguez
-          </span>
-          <span className='text-2xl flex gap-2 text-[#4D5BCE]'>
-            <CaretRight size={22} weight={'bold'} className='inline-block mt-1.5'/> Software Engineer
-          </span>
-        </div>
-        <div className='mt-20 text-m text-[#607B96] leading-loose'>
-          <span className='flex'>
-            .// Coding to improve the world.
-          </span>
-          <span className='flex'>
-           .// you can see my projects in Guithub
-          </span>
-        </div>
-        <div className='leading-loose'>
-          <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>githubLink</span> = 
-          <a href="https://github.com/emilioRguez" className='text-[#E99287] hover:underline ml-2'>https://github.com/emilioRguez</a>
-        </div>
-        <div className='mt-6 text-m text-[#607B96] leading-loose'>
-          <span className='flex'>
-            .// and we also can connect in LinkedIn
-          </span>
-        </div>
-        <div className='leading-loose'>
-          <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>linkedinLink</span> = 
-          <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
-        </div>
-      </main>
+      <div className='flex items-center gap-10'>
+        <main className='pl-48 py-40'>
+          <div className='text-xl'>
+            <HandWaving size={25} color={'#43D9AD'} className='inline-block' /> Hi everyone! I&apos;m
+            <span className='text-6xl mt-6 flex'>
+              Emilio Rodriguez
+            </span>
+            <span className='text-2xl flex gap-2 text-[#4D5BCE]'>
+              <CaretRight size={22} weight={'bold'} className='inline-block mt-1.5'/> Software Engineer
+            </span>
+          </div>
+          <div className='mt-20 text-m text-[#607B96] leading-loose'>
+            <span className='flex'>
+              .// One thing at a time.
+            </span>
+            <span className='flex'>
+            .// you can see my projects in Guithub
+            </span>
+          </div>
+          <div className='leading-loose'>
+            <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>githubLink</span> = 
+            <a href="https://github.com/emilioRguez" className='text-[#E99287] hover:underline ml-2'>https://github.com/emilioRguez</a>
+          </div>
+          <div className='mt-6 text-m text-[#607B96] leading-loose'>
+            <span className='flex'>
+              .// and we also can connect in LinkedIn
+            </span>
+          </div>
+          <div className='leading-loose'>
+            <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>linkedinLink</span> = 
+            <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
+          </div>
+        </main>
 
-      <footer className='flex gap-2 px-4'>
+        <Image className='rounded-sm' src="/Milestones of business projects.svg" height={600} width={450} alt='projects run'/>
+      </div>
+
+      <footer className='flex gap-2 px-4 pt-2 border-t border-[#1E2D3D]'>
         <div>
           <span className="text-m text-[#607B96]">
             Find me in:

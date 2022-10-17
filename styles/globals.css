@@ -5,4 +5,5 @@
 body {
   @apply bg-[#011627] text-gray-100 ;
   -webkit-font-smoothing: antialiased;
+
 }
