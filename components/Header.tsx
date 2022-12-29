@@ -1,26 +1,34 @@
+import { useState } from "react"
+
 export function Header() {
+  
+  const pages = [
+    'blog',
+    'projects',
+    'about_me'
+  ]
+
+  const [hovered, setHovered] = useState('')
+
   return (
-    <header className='text-l text-[#607B96] flex px-4 py-4 border border-[#1E2D3D]'>
-      <a href="http://wwww.emiliorh.com">emilio-rodriguez</a>
-      <div className='flex-1 ml-40 place-items-center'>
+    <header className='text-l items-center text-slate-400 flex lg:justify-around sm:justify-center p-4 border-b border-slate-800'>
+      <a className='font-medium text-emerald-400' href="http://wwww.emiliorh.com">emilio-rodriguez</a>
+      <div className="flex gap-10 items-center">
         <nav>
-          <div className="justify-items-center">
-            <span > 
-              <a href="../" className="mr-16 ">_home</a>
-            </span>
-            <span>
-              <a href="../blog" className="mr-16">_blog</a>
-            </span>
-            <span>
-              <a href="" className="mr-16">_projects</a>
-            </span>
-            <span className="pb-4 mb-4  text-white border-b-2 border-yellow-600">
-              <a href="../aboutme" className="mr-8">_about_me</a>
-            </span>
-          </div>
+          <ul className="flex gap-8">
+            {pages.map(page => {
+              const path = `/${page.toLowerCase()}`
+              const isHovered = hovered === path
+              return (
+                <li key={page}>
+                  <a href={path} className='hover:text-indigo-500'><span className="text-green-300">_</span>{page}</a>
+                </li>
+              )
+            })}
+          </ul>
         </nav>
+        <button className="border rounded-md border-emerald-400 hover:bg-indigo-700 text-emerald-400 px-4 py-2">Get Resume</button>
       </div>
     </header>
-    
   )
 }

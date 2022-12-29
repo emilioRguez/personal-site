@@ -1,70 +1,42 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { HandWaving, TwitterLogo, CaretRight, FacebookLogo, InstagramLogo } from 'phosphor-react'
+import { HandWaving, CaretRight } from 'phosphor-react'
 
 export default function Home() {
-  return (
-    <div className='p-2 mx-auto'>
-      <Head>
-        <title>_hello</title>
-        <meta name="description" content="Personal website building by a developer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  <Head>
+    <title>_hello</title>
+    <meta name="description" content="Personal website building by a developer" />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
 
-      <div className='flex items-center gap-10'>
-        <main className='pl-48 py-40'>
-          <div className='text-xl'>
-            <HandWaving size={25} color={'#43D9AD'} className='inline-block' /> Hi everyone! I&apos;m
-            <span className='text-6xl mt-6 flex'>
-              Emilio Rodriguez
-            </span>
-            <span className='text-2xl flex gap-2 text-[#4D5BCE]'>
-              <CaretRight size={22} weight={'bold'} className='inline-block mt-1.5'/> Software Engineer
-            </span>
+  return (
+    <>
+      <div className='flex justify-center mt-32'>
+        <main className='box-border'>
+          <HandWaving size={25} color={'#34d399'} className='inline-block' /> Hi everyone! I&apos;m
+          <h1 className='text-6xl mt-6 flex font-medium'>
+            Emilio Rodriguez
+          </h1>
+          <div className='mt-2 flex items-center text-indigo-500'>
+            <CaretRight size={22} weight={'bold'}/> 
+            <span className='text-2xl'>Software Engineer & IT</span>
           </div>
-          <div className='mt-20 text-m text-[#607B96] leading-loose'>
-            <span className='flex'>
-              .// One thing at a time.
-            </span>
-            <span className='flex'>
-            .// you can see my projects in Guithub
-            </span>
-          </div>
-          <div className='leading-loose'>
-            <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>githubLink</span> = 
+          <p className='mt-10 text-m text-slate-400 leading-loose'>
+            "One thing at a time". I'm trying to follow that quote every day as my mantra. <br />
+            Currently, I'm focused on improve myself 1% each day. I'm passionate about technology <br />
+            and building projects.
+          </p>
+          <div className='mt-5 text-slate-400 leading-loose'>
+            <p>// you can see my projects in Guithub</p>
+            <span className='text-indigo-500'>const</span> <span className='text-emerald-400'>githubLink</span> = 
             <a href="https://github.com/emilioRguez" className='text-[#E99287] hover:underline ml-2'>https://github.com/emilioRguez</a>
           </div>
-          <div className='mt-6 text-m text-[#607B96] leading-loose'>
-            <span className='flex'>
-              .// and we also can connect in LinkedIn
-            </span>
-          </div>
-          <div className='leading-loose'>
-            <span className='text-[#4D5BCE]'>const</span> <span className='text-[#43D9AD]'>linkedinLink</span> = 
+          <div className='mt-5 text-slate-400 leading-loose'>
+            <p>// and we also could connect in LinkedIn</p>
+            <span className='text-indigo-500'>const</span> <span className='text-emerald-400'>linkedinLink</span> = 
             <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
           </div>
         </main>
-
-        <Image className='rounded-sm' src="/Milestones of business projects.svg" height={600} width={450} alt='projects run'/>
       </div>
-
-      <footer className='flex gap-2 px-4 pt-2 border-t border-[#1E2D3D]'>
-        <div>
-          <span className="text-m text-[#607B96]">
-            Find me in:
-          </span>
-        </div>
-        <div>
-          <a href="https://twitter.com/emilioRdguez">
-            <TwitterLogo size={25} color={'#4D5BCE'} className='inline-block' />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/emiliorguezh/">
-            <InstagramLogo size={25} color={'#E99287'} className='inline-block' />
-          </a>
-        </div>
-      </footer>
-    </div>
+    </>
   )
 }
