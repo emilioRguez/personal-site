@@ -26,12 +26,12 @@ export default function Home() {
             and building projects.
           </p>
           <div className='mt-5 text-slate-400 leading-loose'>
-            <p>// you can see my projects in Guithub</p>
+            <p>.// you can see my projects in Guithub</p>
             <span className='text-indigo-500'>const</span> <span className='text-emerald-400'>githubLink</span> = 
             <a href="https://github.com/emilioRguez" className='text-[#E99287] hover:underline ml-2'>https://github.com/emilioRguez</a>
           </div>
           <div className='mt-5 text-slate-400 leading-loose'>
-            <p>// and we also could connect in LinkedIn</p>
+            <p>.// and we also could connect in LinkedIn</p>
             <span className='text-indigo-500'>const</span> <span className='text-emerald-400'>linkedinLink</span> = 
             <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
           </div>
