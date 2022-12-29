@@ -21,7 +21,7 @@ export default function Home() {
             <span className='text-2xl'>Software Engineer & IT</span>
           </div>
           <p className='mt-10 text-m text-slate-400 leading-loose'>
-            "One thing at a time". I&apos;m trying to follow that quote every day as my mantra. <br />
+            &quot;One thing at a time&quot;. I&apos;m trying to follow that quote every day as my mantra. <br />
             Currently, I&apos;m focused on improve myself 1% each day. I&apos;m passionate about technology <br />
             and building projects.
           </p>
