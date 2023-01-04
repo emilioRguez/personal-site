@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='flex justify-center mt-32'>
+      <div className='flex justify-center items-center p-10'>
         <main className='box-border'>
           <HandWaving size={25} color={'#34d399'} className='inline-block' /> Hi everyone! I&apos;m
           <h1 className='text-6xl mt-6 flex font-medium'>
@@ -20,9 +20,9 @@ export default function Home() {
             <CaretRight size={22} weight={'bold'}/> 
             <span className='text-2xl'>Software Engineer & IT</span>
           </div>
-          <p className='mt-10 text-m text-slate-400 leading-loose'>
-            &quot;One thing at a time&quot;. I&apos;m trying to follow that quote every day as my mantra. <br />
-            Currently, I&apos;m focused on improve myself 1% each day. I&apos;m passionate about technology <br />
+          <p className='mt-10 md:mt-5 text-m text-slate-400 leading-loose max-w-[50rem]'>
+            &quot;One thing at a time&quot;. I&apos;m trying to follow that quote every day as my mantra.
+            Currently, I&apos;m focused on improve myself 1% each day. I&apos;m passionate about technology
             and building projects.
           </p>
           <div className='mt-5 text-slate-400 leading-loose'>

@@ -8,26 +8,27 @@ export function Header() {
     'about_me'
   ]
 
-  const [hovered, setHovered] = useState('')
-
   return (
-    <header className='text-l items-center text-slate-400 flex lg:justify-around sm:justify-center p-4 border-b border-slate-800'>
-      <a className='font-medium text-emerald-400' href="http://wwww.emiliorh.com">emilio-rodriguez</a>
-      <div className="flex gap-10 items-center">
+    <header className='text-l items-center text-slate-400 lg:flex lg:justify-around p-4 border-b border-slate-800'>
+      <div className="flex justify-center p-4">
+        <a href="https://emiliorh.com">
+          <img src="/test-logo.svg" alt="er" />
+        </a>
+      </div>
+      <div className="flex justify-center gap-10 items-center">
         <nav>
           <ul className="flex gap-8">
             {pages.map(page => {
               const path = `/${page.toLowerCase()}`
-              const isHovered = hovered === path
               return (
-                <li key={page}>
-                  <a href={path} className='hover:text-indigo-500'><span className="text-green-300">_</span>{page}</a>
-                </li>
+              <li key={page}>
+                <a href={path} className='hover:text-indigo-500'><span className="text-green-300">_</span>{page}</a>
+              </li>
               )
             })}
           </ul>
         </nav>
-        <button className="border rounded-md border-emerald-400 hover:bg-indigo-700 text-emerald-400 px-4 py-2">Get Resume</button>
+        <button className="border rounded-md border-emerald-400 hover:bg-indigo-700 text-emerald-400 px-4 py-2">Resume</button>
       </div>
     </header>
   )
