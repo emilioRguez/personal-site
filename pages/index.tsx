@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='flex justify-center items-center p-10'>
+      <div className='sm:flex sm:justify-center sm:items-center p-10 min-w-fit'>
         <main className='box-border'>
           <HandWaving size={25} color={'#34d399'} className='inline-block' /> Hi everyone! I&apos;m
           <h1 className='text-6xl mt-6 flex font-medium'>
