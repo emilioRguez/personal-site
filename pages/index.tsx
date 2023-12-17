@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='sm:flex sm:justify-center sm:items-center p-10 min-w-fit'>
+      <div className='sm:flex sm:justify-center sm:items-center mt-20 p-10 min-w-fit'>
         <main className='box-border'>
           <HandWaving size={25} color={'#34d399'} className='inline-block' /> Hi everyone! I&apos;m
           <h1 className='text-6xl mt-6 flex font-medium'>
@@ -22,8 +22,7 @@ export default function Home() {
           </div>
           <p className='mt-10 md:mt-5 text-m text-slate-400 leading-loose max-w-[50rem]'>
             &quot;One thing at a time&quot;. I&apos;m trying to follow that quote every day as my mantra.
-            Currently, I&apos;m focused on improve myself 1% each day. I&apos;m passionate about technology
-            and building projects.
+            Currently, I&apos;m focused on improve myself 1% each day.
           </p>
           <div className='mt-5 text-slate-400 leading-loose'>
             <p>.// you can see my projects in Guithub</p>
@@ -35,6 +34,19 @@ export default function Home() {
             <span className='text-indigo-500'>const</span> <span className='text-emerald-400'>linkedinLink</span> = 
             <a href="https://www.linkedin.com/in/emiliordguez/" className='text-[#E99287] hover:underline ml-2'>https://www.linkedin.com/in/emiliordguez/</a>
           </div>
+
+          <h2 className='text-4xl mt-32 font-medium text-emerald-400'>
+            About <span className='text-indigo-500'>me</span>
+          </h2>
+          <p className='mt-10 md:mt-5 text-m text-slate-400 leading-loose max-w-[60rem]'>
+            I&apos;m that guy with a bunch of energy and loads of ideas swirling around in the digital world. I&apos;ve been reading and soaking up knowledge because 
+            I was obsessed with finding &quot;the idea&quot; to launch the next million-dollar business. But you know what? I realized that the most important thing is just to START!
+          </p>
+          <p className='mt-10 md:mt-5 text-m text-slate-400 leading-loose max-w-[60rem]'>
+            Following the wise advice of Ray Dalio, I&apos;m now embracing the idea of making mistakes... but each time, they&apos;re getting better! So, here I am, giving life to 
+            this website thanks to that mindset.
+          </p>
+
         </main>
       </div>
     </>
